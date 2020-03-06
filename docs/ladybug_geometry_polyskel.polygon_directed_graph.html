@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>ladybug_geometry_polyskel.polygon_directed_graph module &#8212; ladybug-geometry-polyskel  documentation</title>
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="ladybug_geometry_polyskel.polyskel module" href="ladybug_geometry_polyskel.polyskel.html" />
+    <link rel="prev" title="ladybug_geometry_polyskel package" href="ladybug_geometry_polyskel.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          ladybug-geometry-polyskel</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="ladybug_geometry_polyskel.html">ladybug_geometry_polyskel package</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="ladybug_geometry_polyskel.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">ladybug_geometry_polyskel.polygon_directed_graph module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug_geometry_polyskel.polyskel.html">ladybug_geometry_polyskel.polyskel module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ladybug_geometry_polyskel.html#module-ladybug_geometry_polyskel">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="ladybug_geometry_polyskel.html">ladybug_geometry_polyskel package</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="ladybug_geometry_polyskel.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">ladybug_geometry_polyskel.polygon_directed_graph module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug_geometry_polyskel.polyskel.html">ladybug_geometry_polyskel.polyskel module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ladybug_geometry_polyskel.html#module-ladybug_geometry_polyskel">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="ladybug_geometry_polyskel.html" title="Previous Chapter: ladybug_geometry_polyskel package"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; ladybug_geome...</span>
+    </a>
+  </li>
+  <li>
+    <a href="ladybug_geometry_polyskel.polyskel.html" title="Next Chapter: ladybug_geometry_polyskel.polyskel module"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">ladybug_geome... &raquo;</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+              <li class="hidden-sm">
+<div id="sourcelink">
+  <a href="_sources/ladybug_geometry_polyskel.polygon_directed_graph.rst.txt"
+     rel="nofollow">Source</a>
+</div></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-4">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="ladybug_geometry_polyskel.html">ladybug_geometry_polyskel package</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="ladybug_geometry_polyskel.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">ladybug_geometry_polyskel.polygon_directed_graph module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ladybug_geometry_polyskel.polyskel.html">ladybug_geometry_polyskel.polyskel module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ladybug_geometry_polyskel.html#module-ladybug_geometry_polyskel">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    <div class="body col-md-8 content" role="main">
+      
+  <div class="section" id="module-ladybug_geometry_polyskel.polygon_directed_graph">
+<span id="ladybug-geometry-polyskel-polygon-directed-graph-module"></span><h1>ladybug_geometry_polyskel.polygon_directed_graph module<a class="headerlink" href="#module-ladybug_geometry_polyskel.polygon_directed_graph" title="Permalink to this headline">¶</a></h1>
+<p>Implementation of a Directed Graph.</p>
+<dl class="class">
+<dt id="ladybug_geometry_polyskel.polygon_directed_graph.PolygonDirectedGraph">
+<em class="property">class </em><code class="descclassname">ladybug_geometry_polyskel.polygon_directed_graph.</code><code class="descname">PolygonDirectedGraph</code><span class="sig-paren">(</span><em>tol=1e-05</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug_geometry_polyskel/polygon_directed_graph.html#PolygonDirectedGraph"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug_geometry_polyskel.polygon_directed_graph.PolygonDirectedGraph" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>A directed graph for point and edge adjacency relationships.</p>
+<p>This class assumes that exterior edges are naked (unidirectional) and interior
+edges are bidirectional.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>tol</strong> – floating point precision used for hashing points.</td>
+</tr>
+</tbody>
+</table>
+<dl class="docutils">
+<dt>Properties:</dt>
+<dd><ul class="first last simple">
+<li>num_nodes</li>
+</ul>
+</dd>
+</dl>
+<dl class="method">
+<dt id="ladybug_geometry_polyskel.polygon_directed_graph.PolygonDirectedGraph.add_adj">
+<code class="descname">add_adj</code><span class="sig-paren">(</span><em>node</em>, <em>adj_val_lst</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug_geometry_polyskel/polygon_directed_graph.html#PolygonDirectedGraph.add_adj"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug_geometry_polyskel.polygon_directed_graph.PolygonDirectedGraph.add_adj" title="Permalink to this definition">¶</a></dt>
+<dd><p>Adds nodes to node.adj_lst.</p>
+<p>This method will ensure no repetitions will occur in adj_lst.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>node</strong> – _Node to add adjacencies to.</li>
+<li><strong>adj_val_lst</strong> – List of Point2D objects to add as adjacent nodes.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug_geometry_polyskel.polygon_directed_graph.PolygonDirectedGraph.add_node">
+<code class="descname">add_node</code><span class="sig-paren">(</span><em>val</em>, <em>adj_lst</em>, <em>exterior=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug_geometry_polyskel/polygon_directed_graph.html#PolygonDirectedGraph.add_node"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug_geometry_polyskel.polygon_directed_graph.PolygonDirectedGraph.add_node" title="Permalink to this definition">¶</a></dt>
+<dd><p>Consumes a polygon point, and computes its key value, and adds it in the
+graph if it doesn’t exist. If it does exist it appends adj_lst to existing pt.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>val</strong> – A Point2D object</li>
+<li><strong>adj_lst</strong> – A list of Point2D objects</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">The hashed key from the existing or new node.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug_geometry_polyskel.polygon_directed_graph.PolygonDirectedGraph.adj_matrix">
+<code class="descname">adj_matrix</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug_geometry_polyskel/polygon_directed_graph.html#PolygonDirectedGraph.adj_matrix"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug_geometry_polyskel.polygon_directed_graph.PolygonDirectedGraph.adj_matrix" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets an adjacency matrix of the directed graph where:</p>
+<ul class="simple">
+<li>1 = adjacency from row node to col node.</li>
+<li>0 = no adjacency.</li>
+</ul>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">N x N square matrix where N is number of nodes.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug_geometry_polyskel.polygon_directed_graph.PolygonDirectedGraph.adj_matrix_labels">
+<code class="descname">adj_matrix_labels</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug_geometry_polyskel/polygon_directed_graph.html#PolygonDirectedGraph.adj_matrix_labels"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug_geometry_polyskel.polygon_directed_graph.PolygonDirectedGraph.adj_matrix_labels" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a dictionary where label key corresponds to index in adj_matrix
+and value is node key</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="ladybug_geometry_polyskel.polygon_directed_graph.PolygonDirectedGraph.exterior_cycle">
+<em class="property">static </em><code class="descname">exterior_cycle</code><span class="sig-paren">(</span><em>cycle_root</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug_geometry_polyskel/polygon_directed_graph.html#PolygonDirectedGraph.exterior_cycle"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug_geometry_polyskel.polygon_directed_graph.PolygonDirectedGraph.exterior_cycle" title="Permalink to this definition">¶</a></dt>
+<dd><p>Computes exterior boundary from a given node.</p>
+<p>This method assumes that exterior edges are naked (unidirectional) and
+interior edges are bidirectional.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>cycle_root</strong> – Starting _Node in exterior cycle.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">List of nodes on exterior if a cycle exists, else None.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="ladybug_geometry_polyskel.polygon_directed_graph.PolygonDirectedGraph.from_point_array">
+<em class="property">classmethod </em><code class="descname">from_point_array</code><span class="sig-paren">(</span><em>point_array</em>, <em>loop=True</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug_geometry_polyskel/polygon_directed_graph.html#PolygonDirectedGraph.from_point_array"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug_geometry_polyskel.polygon_directed_graph.PolygonDirectedGraph.from_point_array" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generate a directed graph from a 1-dimensional array of points.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>point_array</strong> – Array of Point2D objects.</li>
+<li><strong>loop</strong> – Optional parameter to connect 1d array</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="ladybug_geometry_polyskel.polygon_directed_graph.PolygonDirectedGraph.from_polygon">
+<em class="property">classmethod </em><code class="descname">from_polygon</code><span class="sig-paren">(</span><em>polygon</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug_geometry_polyskel/polygon_directed_graph.html#PolygonDirectedGraph.from_polygon"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug_geometry_polyskel.polygon_directed_graph.PolygonDirectedGraph.from_polygon" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generate a directed graph from a polygon.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>polygon</strong> – A Polygon2D object.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug_geometry_polyskel.polygon_directed_graph.PolygonDirectedGraph.insert_node">
+<code class="descname">insert_node</code><span class="sig-paren">(</span><em>node</em>, <em>new_val</em>, <em>next_node</em>, <em>exterior=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug_geometry_polyskel/polygon_directed_graph.html#PolygonDirectedGraph.insert_node"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug_geometry_polyskel.polygon_directed_graph.PolygonDirectedGraph.insert_node" title="Permalink to this definition">¶</a></dt>
+<dd><p>Insert node in the middle of an edge defined by node and next_node.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>node</strong> – _Node to left.</li>
+<li><strong>new_val</strong> – Value for middle node.</li>
+<li><strong>next_node</strong> – _Node to right.</li>
+<li><strong>exterior</strong> – Optional boolean for exterior attribute.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">key of new_val node.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug_geometry_polyskel.polygon_directed_graph.PolygonDirectedGraph.intersect_graph_with_segment">
+<code class="descname">intersect_graph_with_segment</code><span class="sig-paren">(</span><em>segment</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug_geometry_polyskel/polygon_directed_graph.html#PolygonDirectedGraph.intersect_graph_with_segment"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug_geometry_polyskel.polygon_directed_graph.PolygonDirectedGraph.intersect_graph_with_segment" title="Permalink to this definition">¶</a></dt>
+<dd><p>Update graph with intersection of partial segment that crosses through polygon.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>segment</strong> – LineSegment2D to intersect. Does not need to be contained within</li>
+<li><strong>polygon.</strong> – </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="ladybug_geometry_polyskel.polygon_directed_graph.PolygonDirectedGraph.is_edge_bidirect">
+<em class="property">static </em><code class="descname">is_edge_bidirect</code><span class="sig-paren">(</span><em>node1</em>, <em>node2</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug_geometry_polyskel/polygon_directed_graph.html#PolygonDirectedGraph.is_edge_bidirect"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug_geometry_polyskel.polygon_directed_graph.PolygonDirectedGraph.is_edge_bidirect" title="Permalink to this definition">¶</a></dt>
+<dd><p>Are two nodes bidirectional.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>node1</strong> – _Node object</li>
+<li><strong>node2</strong> – _Node object</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">True if node1 and node2 are in each other’s adjacency list,
+else False.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="ladybug_geometry_polyskel.polygon_directed_graph.PolygonDirectedGraph.min_ccw_cycle">
+<em class="property">static </em><code class="descname">min_ccw_cycle</code><span class="sig-paren">(</span><em>ref_node</em>, <em>next_node</em>, <em>cycle=None</em>, <em>recurse_limit=None</em>, <em>count=0</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug_geometry_polyskel/polygon_directed_graph.html#PolygonDirectedGraph.min_ccw_cycle"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug_geometry_polyskel.polygon_directed_graph.PolygonDirectedGraph.min_ccw_cycle" title="Permalink to this definition">¶</a></dt>
+<dd><p>Recursively identifes most counter-clockwise adjacent node and returns closed loop.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>ref_node</strong> – The first node, for first edge.</li>
+<li><strong>next_node</strong> – The node next to ref_node that constitues a polygon edge.</li>
+<li><strong>cycle</strong> – Current list of nodes that will form a polygon.</li>
+<li><strong>recurse_limit</strong> – optional parameter to limit recursion for debugging.</li>
+<li><strong>count</strong> – optional paramter to limit recursion for debugging.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">A list of nodes that form a polygon.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="ladybug_geometry_polyskel.polygon_directed_graph.PolygonDirectedGraph.next_exterior_node">
+<em class="property">static </em><code class="descname">next_exterior_node</code><span class="sig-paren">(</span><em>node</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug_geometry_polyskel/polygon_directed_graph.html#PolygonDirectedGraph.next_exterior_node"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug_geometry_polyskel.polygon_directed_graph.PolygonDirectedGraph.next_exterior_node" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieves the first exterior node adjacent
+to consumed node. They define an exterior or naked edge.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>node</strong> – _Node</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Next node that defines exterior edge, or None if all
+adjacencies are bidirectional.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="ladybug_geometry_polyskel.polygon_directed_graph.PolygonDirectedGraph.next_unidirect_node">
+<em class="property">static </em><code class="descname">next_unidirect_node</code><span class="sig-paren">(</span><em>node</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug_geometry_polyskel/polygon_directed_graph.html#PolygonDirectedGraph.next_unidirect_node"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug_geometry_polyskel.polygon_directed_graph.PolygonDirectedGraph.next_unidirect_node" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieves the first unidirectional point adjacent
+to consumed point. They define an exterior or naked edge.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>node</strong> – _Node</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Next node that defines unidirectional edge, or None if all
+adjacencies are bidirectional.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug_geometry_polyskel.polygon_directed_graph.PolygonDirectedGraph.node">
+<code class="descname">node</code><span class="sig-paren">(</span><em>key</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug_geometry_polyskel/polygon_directed_graph.html#PolygonDirectedGraph.node"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug_geometry_polyskel.polygon_directed_graph.PolygonDirectedGraph.node" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieves the node based on passed value.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>val</strong> – The key for a node in the directed graph.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">The node for the passed key.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug_geometry_polyskel.polygon_directed_graph.PolygonDirectedGraph.node_exists">
+<code class="descname">node_exists</code><span class="sig-paren">(</span><em>key</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug_geometry_polyskel/polygon_directed_graph.html#PolygonDirectedGraph.node_exists"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug_geometry_polyskel.polygon_directed_graph.PolygonDirectedGraph.node_exists" title="Permalink to this definition">¶</a></dt>
+<dd><p>True if node in directed graph else False</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug_geometry_polyskel.polygon_directed_graph.PolygonDirectedGraph.remove_adj">
+<code class="descname">remove_adj</code><span class="sig-paren">(</span><em>node</em>, <em>adj_key_lst</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug_geometry_polyskel/polygon_directed_graph.html#PolygonDirectedGraph.remove_adj"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug_geometry_polyskel.polygon_directed_graph.PolygonDirectedGraph.remove_adj" title="Permalink to this definition">¶</a></dt>
+<dd><p>Removes nodes in node.adj_lst.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>node</strong> – _Node to remove adjacencies to.</li>
+<li><strong>adj_val_lst</strong> – List of adjacency keys to remove as adjacent nodes.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ladybug_geometry_polyskel.polygon_directed_graph.PolygonDirectedGraph.smallest_closed_cycles">
+<code class="descname">smallest_closed_cycles</code><span class="sig-paren">(</span><em>recurse_limit=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug_geometry_polyskel/polygon_directed_graph.html#PolygonDirectedGraph.smallest_closed_cycles"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug_geometry_polyskel.polygon_directed_graph.PolygonDirectedGraph.smallest_closed_cycles" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets a list of the smallest individual polygons defined by the edges.</p>
+<p>This is achieved by looping through the exterior edges of the directed graph, and
+identifying the closed loop with the smallest counter-clockwise angle of rotation
+between edges. Since the exterior edges of a polygon split by a straight skeleton
+will always result in either a split or edge event, of the interior skeleton,
+this will identify the smallest polygon nested in the directed graph.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">A list of polygon point arrays.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug_geometry_polyskel.polygon_directed_graph.PolygonDirectedGraph.exterior_cycles">
+<code class="descname">exterior_cycles</code><a class="headerlink" href="#ladybug_geometry_polyskel.polygon_directed_graph.PolygonDirectedGraph.exterior_cycles" title="Permalink to this definition">¶</a></dt>
+<dd><p>Computes all exterior boundaries.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">List of boundaries as list of nodes. The first polygon will
+be the outer exterior edge (in counter-clockwise order), and
+subsequent edges will be the edges of the holes in the graph
+(in clockwise order).</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug_geometry_polyskel.polygon_directed_graph.PolygonDirectedGraph.nodes">
+<code class="descname">nodes</code><a class="headerlink" href="#ladybug_geometry_polyskel.polygon_directed_graph.PolygonDirectedGraph.nodes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get an iterable of pt nodes</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug_geometry_polyskel.polygon_directed_graph.PolygonDirectedGraph.ordered_nodes">
+<code class="descname">ordered_nodes</code><a class="headerlink" href="#ladybug_geometry_polyskel.polygon_directed_graph.PolygonDirectedGraph.ordered_nodes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get an iterable of pt nodes in order of addition</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug_geometry_polyskel.polygon_directed_graph.PolygonDirectedGraph.root">
+<code class="descname">root</code><a class="headerlink" href="#ladybug_geometry_polyskel.polygon_directed_graph.PolygonDirectedGraph.root" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the root node, used for traversal of directed graph.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2020, Ladybug Tools.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.5.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

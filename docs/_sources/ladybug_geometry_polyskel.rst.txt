@@ -1,0 +1,18 @@
+ladybug\_geometry\_polyskel package
+===================================
+
+Submodules
+----------
+
+.. toctree::
+
+   ladybug_geometry_polyskel.polygon_directed_graph
+   ladybug_geometry_polyskel.polyskel
+
+Module contents
+---------------
+
+.. automodule:: ladybug_geometry_polyskel
+    :members:
+    :undoc-members:
+    :show-inheritance:

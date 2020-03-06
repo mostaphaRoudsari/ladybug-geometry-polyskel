@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>ladybug_geometry_polyskel.polyskel module &#8212; ladybug-geometry-polyskel  documentation</title>
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="ladybug_geometry_polyskel.polygon_directed_graph module" href="ladybug_geometry_polyskel.polygon_directed_graph.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+
+  <div id="navbar" class="navbar navbar-inverse navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          ladybug-geometry-polyskel</a>
+        <span class="navbar-text navbar-version pull-left"><b></b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="ladybug_geometry_polyskel.html">ladybug_geometry_polyskel package</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="ladybug_geometry_polyskel.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="ladybug_geometry_polyskel.polygon_directed_graph.html">ladybug_geometry_polyskel.polygon_directed_graph module</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">ladybug_geometry_polyskel.polyskel module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ladybug_geometry_polyskel.html#module-ladybug_geometry_polyskel">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="ladybug_geometry_polyskel.html">ladybug_geometry_polyskel package</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="ladybug_geometry_polyskel.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="ladybug_geometry_polyskel.polygon_directed_graph.html">ladybug_geometry_polyskel.polygon_directed_graph module</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">ladybug_geometry_polyskel.polyskel module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ladybug_geometry_polyskel.html#module-ladybug_geometry_polyskel">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="ladybug_geometry_polyskel.polygon_directed_graph.html" title="Previous Chapter: ladybug_geometry_polyskel.polygon_directed_graph module"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; ladybug_geome...</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+              <li class="hidden-sm">
+<div id="sourcelink">
+  <a href="_sources/ladybug_geometry_polyskel.polyskel.rst.txt"
+     rel="nofollow">Source</a>
+</div></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-4">
+        <div id="sidebar" class="bs-sidenav" role="complementary"><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="ladybug_geometry_polyskel.html">ladybug_geometry_polyskel package</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="ladybug_geometry_polyskel.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="ladybug_geometry_polyskel.polygon_directed_graph.html">ladybug_geometry_polyskel.polygon_directed_graph module</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">ladybug_geometry_polyskel.polyskel module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ladybug_geometry_polyskel.html#module-ladybug_geometry_polyskel">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    <div class="body col-md-8 content" role="main">
+      
+  <div class="section" id="module-ladybug_geometry_polyskel.polyskel">
+<span id="ladybug-geometry-polyskel-polyskel-module"></span><h1>ladybug_geometry_polyskel.polyskel module<a class="headerlink" href="#module-ladybug_geometry_polyskel.polyskel" title="Permalink to this headline">¶</a></h1>
+<p>Implementation of the straight skeleton algorithm by Felkel and Obdrzalek[1].</p>
+<p>[1] Felkel, Petr and Stepan Obdrzalek. 1998. “Straight Skeleton Implementation.” In
+Proceedings of Spring Conference on Computer Graphics, Budmerice, Slovakia. 210 - 218.</p>
+<dl class="class">
+<dt id="ladybug_geometry_polyskel.polyskel.Subtree">
+<em class="property">class </em><code class="descclassname">ladybug_geometry_polyskel.polyskel.</code><code class="descname">Subtree</code><span class="sig-paren">(</span><em>source</em>, <em>height</em>, <em>sinks</em><span class="sig-paren">)</span><a class="headerlink" href="#ladybug_geometry_polyskel.polyskel.Subtree" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">tuple</span></code></p>
+<dl class="method">
+<dt id="ladybug_geometry_polyskel.polyskel.Subtree.count">
+<code class="descname">count</code><span class="sig-paren">(</span><em>value</em><span class="sig-paren">)</span> &#x2192; integer -- return number of occurrences of value<a class="headerlink" href="#ladybug_geometry_polyskel.polyskel.Subtree.count" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ladybug_geometry_polyskel.polyskel.Subtree.index">
+<code class="descname">index</code><span class="sig-paren">(</span><em>value</em><span class="optional">[</span>, <em>start</em><span class="optional">[</span>, <em>stop</em><span class="optional">]</span><span class="optional">]</span><span class="sig-paren">)</span> &#x2192; integer -- return first index of value.<a class="headerlink" href="#ladybug_geometry_polyskel.polyskel.Subtree.index" title="Permalink to this definition">¶</a></dt>
+<dd><p>Raises ValueError if the value is not present.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug_geometry_polyskel.polyskel.Subtree.height">
+<code class="descname">height</code><a class="headerlink" href="#ladybug_geometry_polyskel.polyskel.Subtree.height" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 1</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug_geometry_polyskel.polyskel.Subtree.sinks">
+<code class="descname">sinks</code><a class="headerlink" href="#ladybug_geometry_polyskel.polyskel.Subtree.sinks" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 2</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="ladybug_geometry_polyskel.polyskel.Subtree.source">
+<code class="descname">source</code><a class="headerlink" href="#ladybug_geometry_polyskel.polyskel.Subtree.source" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 0</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="ladybug_geometry_polyskel.polyskel.offset">
+<code class="descclassname">ladybug_geometry_polyskel.polyskel.</code><code class="descname">offset</code><span class="sig-paren">(</span><em>polygon</em>, <em>distance</em>, <em>tol=1e-10</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug_geometry_polyskel/polyskel.html#offset"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug_geometry_polyskel.polyskel.offset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Offset the polygon boundary by defined distance.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>distance</strong> – Distance to offset. Only positive distance works in
+current implementation.</li>
+<li><strong>tol</strong> – Tolerance for point equivalence.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">A list of offset contours as Polygon2D objects.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="ladybug_geometry_polyskel.polyskel.perimeter_sub_polygons">
+<code class="descclassname">ladybug_geometry_polyskel.polyskel.</code><code class="descname">perimeter_sub_polygons</code><span class="sig-paren">(</span><em>polygon</em>, <em>distance</em>, <em>tol=1e-10</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug_geometry_polyskel/polyskel.html#perimeter_sub_polygons"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug_geometry_polyskel.polyskel.perimeter_sub_polygons" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compute the perimeter sub-polygons from the polygon straight skeleton.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>distance</strong> – Distance to offset perimeter.</li>
+<li><strong>tol</strong> – Tolerance for point equivalence.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">A list of perimeter zones as Polygon2D objects.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="ladybug_geometry_polyskel.polyskel.set_debug">
+<code class="descclassname">ladybug_geometry_polyskel.polyskel.</code><code class="descname">set_debug</code><span class="sig-paren">(</span><em>image</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug_geometry_polyskel/polyskel.html#set_debug"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug_geometry_polyskel.polyskel.set_debug" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="ladybug_geometry_polyskel.polyskel.skeleton_as_edge_list">
+<code class="descclassname">ladybug_geometry_polyskel.polyskel.</code><code class="descname">skeleton_as_edge_list</code><span class="sig-paren">(</span><em>polygon</em>, <em>holes=None</em>, <em>tol=1e-10</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug_geometry_polyskel/polyskel.html#skeleton_as_edge_list"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug_geometry_polyskel.polyskel.skeleton_as_edge_list" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compute the straight skeleton of a polygon and returns skeleton as list of edges.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>polygon</strong> – list of list of point coordinates in ccw order.
+Example square: [[0,0], [1,0], [1,1], [0,1]]</li>
+<li><strong>holes</strong> – list of polygons representing holes in cw order.
+Example hole: [[.25,.75], [.75,.75], [.75,.25], [.25,.25]]</li>
+<li><strong>tol</strong> – Tolerance for point equivalence.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">list of lines as coordinate tuples.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="ladybug_geometry_polyskel.polyskel.skeleton_as_polygon_list">
+<code class="descclassname">ladybug_geometry_polyskel.polyskel.</code><code class="descname">skeleton_as_polygon_list</code><span class="sig-paren">(</span><em>polygon</em>, <em>holes=None</em>, <em>tol=1e-10</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug_geometry_polyskel/polyskel.html#skeleton_as_polygon_list"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug_geometry_polyskel.polyskel.skeleton_as_polygon_list" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compute the polygon straight skeleton as a list of polygon point arrays.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>polygon</strong> – list of list of point coordinates in ccw order.
+Example square: [[0,0], [1,0], [1,1], [0,1]]</li>
+<li><strong>holes</strong> – list of polygons representing holes in cw order.
+Example hole: [[.25,.75], [.75,.75], [.75,.25], [.25,.25]]</li>
+<li><strong>tol</strong> – Tolerance for point equivalence.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">A list of a list of point arrays representing polygons that define
+the straight skeleton.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="ladybug_geometry_polyskel.polyskel.skeleton_as_subtree_list">
+<code class="descclassname">ladybug_geometry_polyskel.polyskel.</code><code class="descname">skeleton_as_subtree_list</code><span class="sig-paren">(</span><em>polygon</em>, <em>holes=None</em>, <em>tol=1e-10</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug_geometry_polyskel/polyskel.html#skeleton_as_subtree_list"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug_geometry_polyskel.polyskel.skeleton_as_subtree_list" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compute the polygon straight skeleton as a list of subtree of source and sink points.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>polygon</strong> – nested list of endpoint coordinates in ccw order.
+Example square: [[0,0], [1,0], [1,1], [0,1]]</li>
+<li><strong>holes</strong> – list of polygons representing holes in cw order.
+Example hole: [[.25,.75], [.75,.75], [.75,.25], [.25,.25]]</li>
+<li><strong>tol</strong> – Tolerance for point equivalence.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">List of subtrees.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="ladybug_geometry_polyskel.polyskel.sub_polygons">
+<code class="descclassname">ladybug_geometry_polyskel.polyskel.</code><code class="descname">sub_polygons</code><span class="sig-paren">(</span><em>polygon</em>, <em>distance</em>, <em>tol=1e-10</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ladybug_geometry_polyskel/polyskel.html#sub_polygons"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#ladybug_geometry_polyskel.polyskel.sub_polygons" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compute the perimeter and core sub-polygons from the polygon straight skeleton.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>distance</strong> – Distance to offset perimeter.</li>
+<li><strong>tol</strong> – Tolerance for point equivalence.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last"><p>A tuple with two elements</p>
+<ul class="simple">
+<li>perimeter_sub_polygon: A list of perimeter sub-polygons as Polygon2D objects.</li>
+<li>core_sub_polygon: A list of core sub-polygons as Polygon2D objects.</li>
+</ul>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2020, Ladybug Tools.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.5.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>
